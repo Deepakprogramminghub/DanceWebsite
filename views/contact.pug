@@ -1,0 +1,39 @@
+extends base.pug
+ 
+block scripts 
+  script(src='/static/index.js') 
+
+block style 
+    style 
+      include  ../static/style.css 
+      include  ../static/contact.css
+ 
+ 
+ 
+block content 
+  
+ <nav id="navbar">
+    <div class="log"><img src="/static/img/logimg.png" alt=""></div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/">About</a></li>
+      <li><a href="/">Services</a></li>
+      <li><a href="/">Class info</a></li>
+      <li><a href="/">Contact us</a></li>
+    </ul>
+ </nav>
+ <h1 class="head">Hurry up ! Fill up the form now </h1>
+          
+                     
+ <div class="container"></div>
+    <form action="/contact" class="contactform" method="post">
+        <input type="text"  class="first" id="name" name="name" placeholder="Enter your name">
+        <input type="text"  class="first" id="email" name="email" placeholder="Enter your email">
+        <input type="text"  class="first" id="mobile" name="mobile" placeholder="Enter your mobile no.">
+        <input type="text"  class="first" id="gender" name="gender" placeholder="Enter your gender">
+        <input type="text"  class="first" id="address" name="address" placeholder="Enter your address">
+        <button class="btn">Submit</button>
+    </form>
+    
+ </div>
+ <footer class="footer">  <h2>Copyright@2023| All rightreserved</h2></footer>
